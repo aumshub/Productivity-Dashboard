@@ -1,6 +1,9 @@
 console.log("JS Running...");
 
+function openFeatures(){
+    
 const allElems = document.querySelectorAll('.elem');
+const fullElemBack = document.querySelectorAll('.fullElem .back');
 
 allElems.forEach((elem)=>{
     // console.log(elem)
@@ -14,3 +17,13 @@ allElems.forEach((elem)=>{
 
 
 })
+
+
+fullElemBack.forEach((back,index)=>{
+    back.addEventListener("click",()=>{
+        document.querySelectorAll('.fullElem')[back.id].style.display = 'none'
+    })
+})
+}
+
+openFeatures()
