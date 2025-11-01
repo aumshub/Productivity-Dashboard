@@ -41,8 +41,12 @@
             <div class="todo-container">
                 <div class="addTask">
                     <form action="">
-                        <input type="text" placeholder="Enter Task">
+                        <input id="task-input" type="text" placeholder="Enter Task">
                         <textarea name="" placeholder="Enter Details" id=""></textarea>
+                        <div class="checkBox">
+                            <input type="checkbox" name="" id="check-box">
+                            <label for="check-box">Mark as Important</label>
+                        </div>
                         <button>Add Task</button>
                     </form>
 
@@ -54,7 +58,7 @@
                     </div>
                     <div class="tasks">
                         <h5>This is First Task</h5>
-                        <button>Mark as Completed</button>
+                        <button type="submit">Mark as Completed</button>
                     </div>
                   
                 </div>

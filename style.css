@@ -156,7 +156,7 @@ section.allElems {
     align-items: flex-start;
 }
 
-.todo-container .addTask input{
+.todo-container .addTask input#task-input{
     width: 100%;
     padding: 15px 25px;
     font-size: 28px;
@@ -193,6 +193,7 @@ section.allElems {
     cursor: pointer;
     outline: none;
     border: none;
+    margin-top: 10px;
     border-radius: 10px;
     transition: all ease-in-out 0.4s;
 }
@@ -201,6 +202,28 @@ section.allElems {
     scale: 0.97;
 }
 
+
+.addTask .checkBox{
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0 0 0;
+    font-size: 20px; 
+    gap: 10px; 
+}
+
+.addTask .checkBox #check-box{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.addTask .checkBox label{
+    align-self: flex-end;
+    cursor: pointer;
+}
 
 .allTask .tasks{
     width: 100%;

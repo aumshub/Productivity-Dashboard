@@ -26,4 +26,18 @@ fullElemBack.forEach((back,index)=>{
 })
 }
 
-openFeatures()
+openFeatures();
+
+const addTaskForm = document.querySelector('.addTask form');
+const addTaskInput = document.querySelector('.addTask form input');
+const addTaskTextarea = document.querySelector('.addTask form textarea');
+const addTaskCheckbox = document.querySelector('.addTask form #check-box')
+
+
+addTaskForm.addEventListener("submit",function(e){
+    // console.log(e)
+    e.preventDefault();
+    console.log(addTaskInput.value)
+    console.log(addTaskTextarea.value)
+    console.log(addTaskCheckbox.checked)
+})
